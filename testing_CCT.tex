@@ -28,6 +28,12 @@
 \tolerance=1000
 \providecommand{\alert}[1]{\textbf{#1}}
 
+\newcommand\vertarrowbox[3][6ex]{%
+  \begin{array}[t]{@{}c@{}} #2 \\
+  \left\uparrow\vcenter{\hrule height #1}\right.\kern-\nulldelimiterspace\\
+  \makebox[0pt]{\scriptsize#3}
+  \end{array}%
+}
 \title{Cosmology with Strong Gravitational Lensing}
 \author{Darshan Kumar\\Supervisors: Dr Deepak Jain \& Prof Shobhit Mahajan}
 \date{October 2020}
